@@ -19,7 +19,7 @@ jobs:
          distribution: temurin
          java-version: "11"
      - name: CD
-       run: ls
+       run: cd Weather
      - name: CHMOD
        run: chmod +x gradlew
        
