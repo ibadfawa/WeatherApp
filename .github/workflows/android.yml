@@ -18,9 +18,10 @@ jobs:
        with:
          distribution: temurin
          java-version: "11"
-     - name: Set execution flag for gradlew
+     - name: CD
        run: cd /WeatherApp
-            chmod +x gradlew
+     - name: CHMOD
+       run: chmod +x gradlew
        
      - name: Build APK
        run: bash ./gradlew assembleDebug --stacktrace
